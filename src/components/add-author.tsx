@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 import { IAuthor } from "./types";
 import { NewAuthor } from "./api";
+import { useNavigate } from "react-router-dom";
 
 export const AddAuthor = () => {
+  const navigate = useNavigate();
   const {
     handleSubmit,
     register,
@@ -69,6 +71,7 @@ export const AddAuthor = () => {
 
           <div>
             <button
+              onClick={() => navigate("/add-book")}
               type="submit"
               className="w-full bg-green-500 text-white font-medium py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-pink-500"
             >

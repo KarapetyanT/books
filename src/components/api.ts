@@ -10,6 +10,7 @@ export const getBooks = async (): Promise<IBook[]> => {
   const response = await Axios.get("/books");
   return response.data;
 };
+
 export const NewAuthor = async (data: IAuthor): Promise<IAuthor> => {
   const response = await Axios.post("/authors", data);
   return response.data;

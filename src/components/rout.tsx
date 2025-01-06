@@ -9,7 +9,7 @@ export const paths = createBrowserRouter([
     path: "",
     element: <Layout />,
     children: [
-      { path: "book", element: <Books /> },
+      { path: "", element: <Books /> },
       { path: "add-author", element: <AddAuthor /> },
       { path: "add-book", element: <AddBook /> },
       { path: "book/details/:id", element: <AddAuthor /> },

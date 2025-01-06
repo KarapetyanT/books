@@ -5,10 +5,10 @@ export const Layout = () => {
     <>
       <div className="flex text-center flex-col min-h-screen">
         <nav className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white p-4">
-          <div className="text-3xl font-extrabold mb-4">Books</div>
+          <div className="text-3xl font-extrabold mb-4">Book Store</div>
           <div className="flex text-center space-x-6">
             <NavLink
-              to="/book"
+              to="/"
               className="hover:text-blue-300 text-xl transition font-semibold"
             >
               Book

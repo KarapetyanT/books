@@ -3,8 +3,10 @@ import { IAuthor, IBook } from "./types";
 import { addNewBook } from "./api";
 import { useState, useEffect } from "react";
 import { getAuthors } from "./api";
+import { useNavigate } from "react-router-dom";
 
 export const AddBook = () => {
+  const navigate = useNavigate();
   const {
     handleSubmit,
     register,
@@ -108,6 +110,7 @@ export const AddBook = () => {
 
             <div>
               <button
+                onClick={() => navigate("/")}
                 type="submit"
                 className="w-full bg-green-500 text-white font-medium py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-pink-500"
               >
